@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP NIVELACION</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg logoP navbar-light bg-light">
+          <a class="navbar-brand logoP href="#"><img src="img/logo.png" class="w-100" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PLANES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DESTINO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal"> CONTACTOS </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="hola-item">
+            <img src="img/brujula.png" alt="" class="text-center">
+            <div class="hola-caption captionMove d-none d-md-block justify-content-center">
+              <h5>RUMBO</h5>
+              <p>EL SITIO WEB DE TURISMO IDEAL PARA TI</p>
+            </div>
+
+            <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    EMPEZAR
+            </button>
+    </header>
+
+    <main>
+
+        <section id="card" class="text-center">
+            <div class="container">
+            <div class="row">
+                <h3><b>PLANES</b></h3>
+                <p>En <b>RUMBO</b> tenemos los iguientes planes para ti <br>
+
+                  Selecciona el plan que más se ajuste a la experiencia que quieras vivir  </p>
+
+              <div class="col-lg-4 col-md-6 cardii">
+                <div class="card" style="width: 18rem;">
+                <img src="img/senderismo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="card-title">SENDERISMO</div>
+                  <p class="card-text">5 a 8 personas <br>
+                    6 km de ruta <br>
+                    150.000 Pesos <br>
+                    Precio por persona</p>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="col-lg-4 col-md-6 cardii">
+              <div class="card" style="width: 18rem;">
+                <img src="img/canotaje.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="card-title">CANOTAJE</div>
+                  <p class="card-text">5 a 8 personas<br>
+                    6 km de ruta<br>
+                    150.000 Pesos<br>
+                    Precio por persona</p>
+                    </div>
+              </div>
+            </div>
+
+              <div class="col-lg-4 col-md-6 cardii">
+              <div class="card" style="width: 18rem;">
+                <img src="img/canotaje.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="card-title">CAMPING</div>
+                  <p class="card-text">5 a 8 personas<br>
+                    6 km de ruta<br>
+                    150.000 Pesos<br>
+                    Precio por persona</p>
+                </div>
+              </div>
+            </div>
+
+          </section>
+    
+
+
+          <section id="destinos" class="text-center">
+            <div class="container">
+              <h2><b>DESTINOS</b></h2>
+              <div class="row">
+
+
+                <div class="col-md-4 col-md-6 card-destinos">
+                  <img src="img/cartagena.png" alt="">
+                  <h3>CARTAGENA</h3>
+                </div>
+
+
+                <div class="col-md-4 col-md-6 card-destinos">
+                  <img src="img/barranquilla.png" alt="">
+                  <h3>BARRANQUILLA</h3>
+                </div>
+
+                <div class="col-md-4 col-md-6 card-destinos">
+                  <img src="img/llanos.png" alt="">
+                  <h3>LLANOS ORIENTALES</h3>
+                </div>
+
+                <div class="col-md-4 col-md-6 card-destinos">
+                  <img src="img/laguajira.png" alt="">
+                  <h3>LA GUAJIRA</h3>
+                </div>
+              </section>
+              
+              <section id="cont-global">
+                <div class="container-fluid">
+                  <h2><b>CONTACTOS</b></h2>
+                  <p>Comparte con nosotros tus datos de contacto y te enviaremos <br>
+                     toda la informacón de los medios de pagos.</p>
+                    <div class="row">
+                      <div class="col-lg-6 cont-form-p"></div>
+                            <form action="model/insertarProductos.php" class="text-start " method="POST" enctype="multipart/form-data">
+                                <div class="row">
+
+
+
+                                    <div class="mb-3 col-md-6">
+                                      <input type="text" name="nombre" class="form-control" id="nombreInput" aria-describedby="emailHelp" placeholder="Nombre:">
+                                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else. -->
+                                    </div>
+        
+                                    <div class="mb-3 col-md-6">
+                                        <input type="text" name="nombre" class="form-control" id="nombreInput" aria-describedby="emailHelp" placeholder="Telefono:">
+                                       
+                                    </div>
+                                    
+                                    <div class="mb-3 col-md-6">
+                                        <input type="text" name="descripcion" class="form-control" id="descripcionInput" aria-describedby="emailHelp" placeholder="Email:">
+                                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else. -->
+                                    </div>
+        
+                                    <div class="mb-3 col-md-6">
+                                        <select class="form-select" name="proveedor" id="proveedorinput" aria-label="Default select example" placeholder="Email:">
+                                            <option selected>Ciudad:</option>
+                                            <option value="BARRANQUILLA">BARRANQUILLA</option>
+                                            <option value="CARTAGENA">CARTAGENA</option>
+                                            <option value="LLANOS">LLANOS ORIENTALES</option>
+                                            <option value="GUAJIR">LA GUAJIRA</option>
+                                          </select>
+
+
+                                          <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    ENVIAR
+            </button>
+
+
+    </main>
+
+</body>
+<footer>
+  <section id="cont-global1">
+    <div class="container-fluid">
+      <p>© Todos los derechos reservados <br>
+        contacto@rumbo.com <br>
+        +57 3212444445 <br>
+        Cr 90 #93 - 20</p>
+        <div class="row">
+          <div class="col-lg-6 cont-form-p"></div>
+                <form action="model/insertarProductos.php" class="text-start " method="POST" enctype="multipart/form-data">
+                    <div class="row">
+</footer>
+
+
+
+</html>
